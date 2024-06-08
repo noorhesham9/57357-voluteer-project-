@@ -1,0 +1,15 @@
+{
+  "name": "57357 volunteer",
+  "version": "1.0.0",
+  "description": "57357 volunteer project",
+  "main": "server.js",
+  "repository": "https://github.com/noorhesham9/57357-voluteer-project-.git",
+  "author": "noor eldeen",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.1"
+  }
+}
