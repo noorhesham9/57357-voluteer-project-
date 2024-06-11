@@ -1,5 +1,5 @@
 {
-  "name": "57357 volunteer",
+  "name": "57357volunteer",
   "version": "1.0.0",
   "description": "57357 volunteer project",
   "main": "server.js",
@@ -8,9 +8,20 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.4.1"
+    "mongoose": "^8.4.1",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.9.13",
+    "universal-cookie-express": "^7.1.4",
+    "yarn": "^1.22.22"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
   }
 }
