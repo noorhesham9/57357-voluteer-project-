@@ -11,5 +11,7 @@ router
 router
   .route("/getvolunteers")
   .get(AdminController.protect, VolunteerController.getvolunteers);
-
+router
+  .route("/getmonthlyvolunteers")
+  .get(AdminController.protect, VolunteerController.getmonthlyVolunteer);
 module.exports = router;

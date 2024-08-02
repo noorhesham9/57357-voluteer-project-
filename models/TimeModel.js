@@ -3,7 +3,25 @@ const TimeSchema = new mongoose.Schema({
   date: {
     type: Date,
     required: true,
-    default: Date.now,
+    default: Date.now(),
+  },
+  month: {
+    type: Number,
+    required: true,
+    min: 1,
+    max: 12,
+  },
+  day: {
+    type: Number,
+    required: true,
+    min: 1,
+    max: 31,
+  },
+  year: {
+    type: Number,
+    required: true,
+    min: 2000,
+    max: 2100,
   },
   from: {
     type: String,
@@ -19,6 +37,14 @@ const TimeSchema = new mongoose.Schema({
   },
   volunteer: {
     type: mongoose.Schema.Types.ObjectId,
+    required: true,
+  },
+  volunteerName: {
+    type: String,
+    required: true,
+  },
+  adminName: {
+    type: String,
     required: true,
   },
   duration: {

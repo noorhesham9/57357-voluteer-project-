@@ -68,6 +68,7 @@ exports.addAdmin = asynsErrorHandler(async (req, res, next) => {
 
 let token;
 exports.protect = asyncErrorHandler(async (req, res, next) => {
+  console.log("protect entered");
   // 1. read the token & check if exist
   const testToken = req.headers.authorization;
   if (testToken && testToken.startsWith("Bearer")) {
